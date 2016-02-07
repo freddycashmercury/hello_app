@@ -7,14 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-  <div class="header text-center">
-    <div class="nav navbar-default navbar-fixed-top">
+  <header class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-class">
       <div class="container">
-        <h1>Cody Works</h1>
+        <div class="text-center">
+          <h1>Cody Works</h1>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><%= link_to "Projects", 'projects' %></li>
+        </ul>
       </div>
     </div>
-  </div>
+  </header>
 
 <%= yield %>
 

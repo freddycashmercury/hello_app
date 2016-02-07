@@ -2,12 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.body {
-  padding-top: 75px;
+.home-body {
+  padding-top: 150px;
 }
 
 @media (max-width: 979px) {
-  .body {
+  .home-body {
     padding-top: 0px;
   }
+}
+
+.projects-body {
+  padding-top: 120px;
 }
