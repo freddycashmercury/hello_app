@@ -1,0 +1,21 @@
+<header class="text-center body">
+  <h1>Projects</h1>
+</header>
+<body>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <th>Project Description</th>
+      <th>Link to Project</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td><p>This website you are on now! A simple personal website.</p></td>
+        <td><%= link_to "Go to the homepage.", root_path %></td>
+      </tr>
+      <tr>
+        <td><p>A blogging application that allows users to create a blog and view other users' blogs.</p></td>
+        <td><%= link_to "See my blogging site in action.", "http://blog.cody.works", :target => "blog.cody.works" %></td>
+      </tr>
+    </tbody>
+  </table>
+</body>

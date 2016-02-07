@@ -1,6 +1,11 @@
 class StaticPagesController < ApplicationController
 
-  def index
-    render 'about'
+  def home
+    render 'home'
   end
+
+  def projects
+    render 'projects'
+  end
+  
 end
