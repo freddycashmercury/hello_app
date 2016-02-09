@@ -6,6 +6,7 @@ Rails.application.routes.draw do
    root 'static_pages#home'
    get 'projects' => 'static_pages#projects'
 
+   resources :comments, only: [:new, :show, :create]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

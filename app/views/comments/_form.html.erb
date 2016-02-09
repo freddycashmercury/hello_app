@@ -1,0 +1,19 @@
+<%= @page_title = "Comment Creation" %>
+<body>
+  <div class="home-body container">
+    <%= form_for @comment do |f| %>
+      <form class="form-inline">
+        <div class="row">
+          <%= f.text_field :name, :placeholder => "Name" %>
+        </div>
+        <div class="row">
+          <%= f.text_field :email, :placeholder => "Email Address" %>
+        </div>
+        <div class="row">
+          <%= f.text_field :body, :placeholder => "Your comment here!" %>
+        </div>
+      </form>
+      <%= f.submit "Submit", :class => "btn btn-default" %>
+    <% end %>
+  </div>
+</body>
