@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Comment</th>
+  </thead>
+  <tbody>
+    <% @comments.each do |comment| %>
+      <tr>
+        <td>comment.name</td>
+        <td>comment.email</td>
+        <td>comment.body</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
