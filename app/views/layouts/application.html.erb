@@ -10,12 +10,12 @@
   <header class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-class">
       <div class="container">
-        <div class="text-center">
+        <div class="text-center" style='color: #666666'>
           <h1>Cody Works</h1>
         </div>
         <ul class="nav navbar-nav">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Projects", 'projects' %></li>
+          <li><%= link_to "Home", root_path, :class => 'navbar-link' %></li>
+          <li><%= link_to "Projects", 'projects', :class => 'navbar-link' %></li>
         </ul>
       </div>
     </div>
