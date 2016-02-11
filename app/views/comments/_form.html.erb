@@ -3,17 +3,17 @@
   <div class="home-body container">
     <%= form_for @comment do |f| %>
       <form class="form-inline">
-        <div class="row">
+        <div class="form-group">
           <%= f.text_field :name, :placeholder => "Name" %>
         </div>
-        <div class="row">
+        <div class="form-group">
           <%= f.text_field :email, :placeholder => "Email Address" %>
         </div>
-        <div class="row">
+        <div class="form-group">
           <%= f.text_field :body, :placeholder => "Your comment here!" %>
         </div>
-      </form>
-      <%= f.submit "Submit", :class => "btn btn-default" %>
+        <%= f.submit "Submit", :class => "btn btn-default" %>
+        </form>
     <% end %>
   </div>
 </body>
