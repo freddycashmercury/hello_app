@@ -1,0 +1,22 @@
+<div class="container home-body">
+  <table class="table table-striped table-bordered">
+    <thead>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Comment</th>
+      <th>Time submitted</th>
+    </thead>
+    <tbody>
+      <% @comments.each do |comment| %>
+        <tr>
+          <td><%= comment.name %></td>
+          <td><%= comment.email %></td>
+          <td><%= comment.body %></td>
+          <td><%= comment.created_at.localtime %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+
