@@ -2,18 +2,28 @@
 <body>
   <div class="home-body container">
     <%= form_for @comment do |f| %>
-      <form class="form-inline">
+      <div class="row comment-input"> 
         <div class="form-group">
-          <%= f.text_field :name, :placeholder => "Name" %>
+          <div class="col-md-2">
+          <%= f.text_field :name, :placeholder => "Name", :class => "form-control" %>
+          </div>
         </div>
+      </div>
+      <div class="row comment-input">
         <div class="form-group">
-          <%= f.text_field :email, :placeholder => "Email Address" %>
+          <div class="col-md-2">
+          <%= f.text_field :email, :placeholder => "Email Address", :class => "form-control" %>
+          </div>
         </div>
+      </div>
+      <div class="row comment-input">
         <div class="form-group">
-          <%= f.text_field :body, :placeholder => "Your comment here!" %>
+          <div class="col-md-2">
+            <%= f.text_area :body, :placeholder => "Your comment here!", :class => "form-control" %>
+          </div>
         </div>
-        <%= f.submit "Submit", :class => "btn btn-default" %>
-        </form>
+      </div>
+        <%= f.submit "Submit", :class => "btn btn-default btn-large" %>
     <% end %>
   </div>
 </body>
